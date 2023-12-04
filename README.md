@@ -40,19 +40,22 @@ A step-by-step series of examples that tell you how to get a development environ
 The application provides the following RESTful endpoints:
 
 _GET /profile: Retrieve the profile of the current user.
+
 UPDATE /profile: Update the profile details of the current user.
+
 POST /signin: Authenticate a user and create a new session.
+
 POST /signup: Register a new user._
 
 **1. POST /signup: Register a new user.**
 <img width="660" alt="image" src="https://github.com/thtrangphu/CleanArchitecture-TKPM/assets/76843467/7003d147-8e12-4950-9f58-b313b0081b87">
 
-**2. UPDATE /profile: Update the profile details of the current user.**
+**2. UPDATE /signin: Authenticate a user and create a new session.**
 <img width="674" alt="image" src="https://github.com/thtrangphu/CleanArchitecture-TKPM/assets/76843467/52863979-96f0-4f7f-9304-3b7a173b2de8">
 
-**3. POST /signin: Authenticate a user and create a new session.**
+**3. GET /profile: Retrieve the profile of the current user.**
 <img width="638" alt="image" src="https://github.com/thtrangphu/CleanArchitecture-TKPM/assets/76843467/0213279a-1db4-4b00-87b4-abb42fe30fcd">
 
-**4. POST /signup: Register a new user.**
+**4. POST /profile: Update the profile details of the current user.**
 <img width="639" alt="image" src="https://github.com/thtrangphu/CleanArchitecture-TKPM/assets/76843467/93b6dd44-204a-4b09-bbee-002446eda029">
 
