@@ -1,0 +1,12 @@
+gdown
+opencv-python
+dlib
+Pillow
+dotmap
+imutils
+matplotlib
+PyYAML
+tensorflow_addons
+keras_cv_attention_models
+pandas
+scikit-learn

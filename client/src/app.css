@@ -1,0 +1,323 @@
+.navbar {
+  height: 50px;
+  background-color: rgba(16, 30, 102, 0.698);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f6d365;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right bottom,
+    rgba(246, 211, 101, 1),
+    rgba(253, 160, 133, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right bottom,
+    rgba(246, 211, 101, 1),
+    rgba(253, 160, 133, 1)
+  );
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.listItem {
+  margin-right: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home {
+  display: flex;
+  flex-wrap: nowrap; /* Không cho phép các phần tử con chuyển sang hàng mới */
+  justify-content: space-between;
+  align-items: stretch; /* Kéo giãn các phần tử con để chiếm đầy đủ chiều cao */
+  padding: 50px 0; /* Điều chỉnh padding để không ảnh hưởng đến chiều rộng */
+  margin: 0 auto;
+  max-width: 1200px; /* Có thể đặt giới hạn chiều rộng tối đa nếu muốn */
+}
+
+.image {
+  flex: 1; /* Mỗi phần tử con chiếm một phần bằng nhau của container */
+  padding: 0 10px; /* Thêm padding vào từng ảnh */
+  text-align: right;
+}
+
+.image-img {
+  width: 90%; /* Chiếm toàn bộ chiều rộng của phần tử cha */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-sizing: border-box; /* Bao gồm padding và border trong tổng kích thước */
+}
+
+.desc {
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.img-button {
+  margin-top: 10px;
+  border: solid rgba(16, 30, 102, 0.698) 2px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px 40px;
+  color: rgba(16, 30, 102, 0.698);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.img-button-download {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.img-button:hover {
+  background-color: rgba(
+    16,
+    30,
+    102,
+    0.37
+  ); /* Darker green background on hover */
+}
+
+.img-button:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.img-button:focus {
+  outline: none; /* Removes the outline on focus */
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.postDesc {
+  padding: 0 100px;
+  font-size: 24px;
+  font-weight: 300;
+  color: gray;
+  margin-top: 50px;
+}
+
+.postLongDesc {
+  padding: 100px;
+  padding-top: 50px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 60%;
+  height: 75%;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.or {
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  padding: 10px;
+  color: gray;
+  background-color: white;
+  font-weight: bold;
+}
+
+.line {
+  width: 0.5px;
+  height: 70%;
+  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.loginButton {
+  width: 150px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.google {
+  background-color: #df4930;
+}
+.facebook {
+  background-color: #507cc0;
+}
+.github {
+  background-color: black;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+input {
+  width: 200px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.submit {
+  width: 200px;
+  background-color: rgba(0, 51, 128, 0.671);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.loginTitle {
+  position: absolute;
+  top: 120px;
+  /* margin-bottom: 35px; */
+  color: rgb(0, 51, 128);
+}
+.scale-img {
+  height: 300px;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .wrapper {
+    width: 65%;
+    height: 90%;
+    flex-direction: column;
+  }
+
+  .loginTitle {
+    display: none;
+  }
+
+  .center {
+    width: 100%;
+    position: relative;
+  }
+
+  .left {
+    padding: 20px;
+  }
+
+  .right {
+    padding: 20px;
+  }
+
+  .line {
+    height: 0.5px;
+    width: 300px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+  .img-button,
+  .img-button-download {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.ml {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  /* align-items: center; */
+}
